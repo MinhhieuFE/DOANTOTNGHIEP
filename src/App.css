@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+    margin: 0px;
+    padding: 0px;
   }
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+
+  /* Logo */
+.bg-green{
+  background: #86ba09;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.headerWrapper .top-strip {
+  padding: 8px 0px;
+}
+.headerWrapper .top-strip p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.headerWrapper .header {
+  width: 100%;
+  height: auto;  
+  padding: 0px 0px 10px 0px;
+}
+
+
+.headerWrapper .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1400px;
+}
+
+
+.logoWrapper img {
+  width: 70%;
+  height: 70%;
+}
+
+.headerWrapper .header .part2 .provinceDrop {
+    width: 180px;
+    height: 60px;
+    min-width: 150px;
+    color: #86ba09 !important;
+    border: 2px solid green !important;
+    justify-content: 7px !important;
+    padding: 15px 15px ;
+}
+.headerWrapper .header .part2 .provinceDrop {
+    text-align: left;
+    justify-content:flex-start !important;
+}
+
+.headerWrapper .header .part2 .provinceDrop .label 
+{
+    font-size: 12px !important;
+    text-transform: capitalize !important; /*chuyển đổi tất cả các chữ cái đầu tiên của mỗi từ trong văn bản thành in hoa.*/
+    color: rgba(0,0,0,0.7) !important;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.headerWrapper .header .part2 .provinceDrop .name 
+{
+  font-size: 14px !important;
+    text-transform: capitalize !important; 
+    color: #6e9909 ;
+    font-weight: 700;
+}
+
+.headerWrapper .header .part2 .provinceDrop span.ml-auto svg {
+  opacity: 0.7;
+}
+
+header .headerSearch {
+  width: 50%;
+  height: 50px;
+  background: #f3f4f7;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.1) ;
+  margin-left: 15px;
+}
+
+
+header .headerSearch input {
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  color: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 30px;
+  border: 0px;
+  padding: 0px 25px 1px 25px;
+}
+
+header .headerSearch input::-webkit-input-placeholder
+{
+  color: rgba(0,0,0,0.6);
+}
+
+header .headerSearch button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+  min-width: 30px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: #000
+}
+
+header .headerSearch button svg {
+  font-size: 30px;
+}
+
+header .headerSearch :hover {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+header .part3 .circle {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 45px;
+  height: 45px;
+  width: 45px; 
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+  color: #000;
+  margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+header .part3 .circle svg {
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartTab{
+  width: 250px;
+  padding-left: 30px;
+}
+
+.cartTab .price{
+  font-size: 18px;
+  color: rgba(0,0,0,0.8);
+  font-weight: 700;
+  margin-left: 25px;
+}
+
+.cartTab button  {
+  background: #fff1ee;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cartTab button svg 
+{
+    color: green;
+    font-weight: 700;
+}
+
+.cartTab .count
+{
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    background: #ea2b0f;
+    border-radius: 50%;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.cartTab .cart-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px ;
+}
+
+nav .allCatTab {
+  background: #86ba09;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+nav .allCatTab *{
+  color: #fff;
+}
+nav .allCatTab .text 
+{
+  font-weight: 600;
+}
+nav .allCatTab .icon1 svg {
+  font-size: 20px;
+}
+nav .allCatTab .icon2 svg {
+  font-size: 15px;
+}
+
+nav .navPart2 ul {
+  margin-bottom: 0px;
+}
+
+nav .navPart2 ul li a {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: all o.2s ease-in-out
+}
+
+nav .navPart2 ul li a:hover {
+  background: #86ba09;
+  color: #f0faff ;
+  border-radius: 20px;
+  
+}
+
+nav .navPart2 ul li a svg {
+  font-size: 20px;
 }
